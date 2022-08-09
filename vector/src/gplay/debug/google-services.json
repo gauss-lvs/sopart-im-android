@@ -1,35 +1,41 @@
 {
   "project_info": {
-    "project_number": "912726360885",
-    "firebase_url": "https://vector-alpha.firebaseio.com",
-    "project_id": "vector-alpha",
-    "storage_bucket": "vector-alpha.appspot.com"
+    "project_number": "902937970447",
+    "project_id": "sopart-app-526a3",
+    "storage_bucket": "sopart-app-526a3.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:912726360885:android:4ef8f3a0021e774d",
+        "mobilesdk_app_id": "1:902937970447:android:6578a77908904412a6e07a",
         "android_client_info": {
-          "package_name": "im.vector.app.debug"
+          "package_name": "de.gausslvs.sopart.im.debug"
         }
       },
       "oauth_client": [
         {
-          "client_id": "912726360885-e87n3jva9uoj4vbidvijq78ebg02asv2.apps.googleusercontent.com",
+          "client_id": "902937970447-h3ck7nn05h9gu0te0dsv7ps3uf04of3j.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAFZX8IhIfgzdOZvxDP_ISO5WYoU7jmQ5c"
+          "current_key": "AIzaSyB2O5RAoxHLaut2roFOiBv2YG-CTVQHflk"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "912726360885-rsae0i66rgqt6ivnudu1pv4tksg9i8b2.apps.googleusercontent.com",
+              "client_id": "902937970447-h3ck7nn05h9gu0te0dsv7ps3uf04of3j.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "902937970447-1tqr8kl5i9kns0g4bluv9deo450p5kiv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "de.gausslvs.sopartwebapp"
+              }
             }
           ]
         }
