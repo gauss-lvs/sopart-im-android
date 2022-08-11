@@ -14,10 +14,11 @@
  * limitations under the License.
  */
 
-package im.vector.app.nightly
+package im.vector.app.features.push
 
-import javax.inject.Inject
+import androidx.fragment.app.Fragment
+import im.vector.app.features.settings.troubleshoot.NotificationTroubleshootTestManager
 
-class NightlyProxy @Inject constructor() {
-    fun onHomeResumed() = Unit
+interface NotificationTroubleshootTestManagerFactory {
+    fun create(fragment: Fragment): NotificationTroubleshootTestManager
 }

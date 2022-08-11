@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 New Vector Ltd
+ * Copyright (c) 2022 New Vector Ltd
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package im.vector.app
+package im.vector.app.core.debug
 
 import android.content.Context
-import android.content.Intent
-import com.google.android.gms.oss.licenses.OssLicensesMenuActivity
 
-fun openOssLicensesMenuActivity(context: Context) = context.startActivity(Intent(context, OssLicensesMenuActivity::class.java))
+interface DebugNavigator {
+    fun openDebugMenu(context: Context)
+}

@@ -14,18 +14,14 @@
  * limitations under the License.
  */
 
-package im.vector.app.flipper
+package im.vector.app.leakcanary
 
-import okhttp3.Interceptor
-import org.matrix.android.sdk.api.Matrix
+import im.vector.app.core.debug.LeakDetector
+import leakcanary.LeakCanary
 import javax.inject.Inject
 
-/**
- * No op version.
- */
-@Suppress("UNUSED_PARAMETER")
-class FlipperProxy @Inject constructor() {
-    fun init(matrix: Matrix) {}
-
-    fun getNetworkInterceptor(): Interceptor? = null
+class LeakCanaryLeakDetector @Inject constructor() : LeakDetector {
+    override fun enable(enable: Boolean) {
+        LeakCanary.config = LeakCanary.config.copy(dumpHeap = enable)
+    }
 }
