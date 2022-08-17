@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2021 New Vector Ltd
+ * Copyright (c) 2022 New Vector Ltd
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,16 +14,14 @@
  * limitations under the License.
  */
 
-package im.vector.app.features.login2.created
+package im.vector.app.features.home.room.list.home.filter
 
-import com.airbnb.mvrx.Async
-import com.airbnb.mvrx.MavericksState
-import com.airbnb.mvrx.Uninitialized
-import org.matrix.android.sdk.api.util.MatrixItem
+import androidx.annotation.StringRes
+import im.vector.app.R
 
-data class AccountCreatedViewState(
-        val userId: String = "",
-        val isLoading: Boolean = false,
-        val currentUser: Async<MatrixItem.UserItem> = Uninitialized,
-        val hasBeenModified: Boolean = false
-) : MavericksState
+enum class HomeRoomFilter(@StringRes val titleRes: Int) {
+    ALL(R.string.room_list_filter_all),
+    UNREADS(R.string.room_list_filter_unreads),
+    FAVOURITES(R.string.room_list_filter_favourites),
+    PEOPlE(R.string.room_list_filter_people),
+}
